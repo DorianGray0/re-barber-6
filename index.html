@@ -32,14 +32,16 @@
           <a class="header-logo" href="./index.html"><img src="./images/logo.svg" alt="logo" /></a>
 
           <ul class="navigation-list">
-            <li class="navigation-item"><a class="navigation-link link" href="#about">About</a></li>
+            <li class="navigation-item"><a class="navigation-link link" href="">About</a></li>
             <li class="navigation-item">
-              <a class="navigation-link link" href="#services">Services and prices</a>
+              <a class="navigation-link link" href="">Services and prices</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link link" href="#barbers">Barbers</a>
+              <a class="navigation-link link" href="">Barbers</a>
             </li>
-            <li class="navigation-item"><a class="navigation-link link" href="">Contacts</a></li>
+            <li class="navigation-item">
+              <a class="navigation-link link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
 
@@ -82,7 +84,7 @@
       </section>
 
       <!-- SECTION 2 ABOUT -->
-      <section class="about" id="about">
+      <section class="about">
         <div class="container">
           <ul class="about-list">
             <li class="about-item">
@@ -112,7 +114,7 @@
       </section>
 
       <!-- SECTION 3 services and prices  -->
-      <section class="services" id="services">
+      <section class="services">
         <div class="container">
           <p class="services-upper-text upper-text">Spend your time with the best masters</p>
           <h2 class="services-title title" data-aos="fade-right">Services and prices</h2>
@@ -194,7 +196,7 @@
       </section>
 
       <!-- SECTION 5 Our barbers -->
-      <section class="team" id="barbers">
+      <section class="team">
         <div class="container">
           <p class="team-upper-text upper-text">For true enjoyers of the atmosphere</p>
           <h2 class="team-title title" data-aos="fade-right">Our barbers</h2>
@@ -447,7 +449,7 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -510,6 +512,7 @@
               id="privacy"
               value="true"
               class="input-check visually-hidden"
+              required
             />
             <label for="privacy" class="check-text">
               I accept the terms and conditions of the&#160;<a href="">Privacy Policy</a>
