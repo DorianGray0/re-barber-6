@@ -385,6 +385,32 @@
           <!-- SECTION 7 online booking -->
           <section class="booking">
             <h2 class="booking-title title" data-aos="zoom-out">Online-booking</h2>
+            <form class="booking-form" autocomplete="off">
+              <div class="booking-inp-wrap">
+                <div class="booking-field">
+                  <label class="booking-label">
+                    <span class="booking-text">Name*</span>
+                    <input type="text" name="name" class="booking-inp" required />
+                  </label>
+                </div>
+
+                <div class="booking-field">
+                  <label class="booking-label">
+                    <span class="booking-text">Phone*</span>
+                    <input type="tel" name="phone" class="booking-inp" required />
+                  </label>
+                </div>
+              </div>
+
+              <div class="booking-field">
+                <label class="booking-label">
+                  <span class="booking-text">Message</span>
+                  <textarea name="comment" class="booking-inp booking-textarea"></textarea>
+                </label>
+              </div>
+
+              <button class="header-button btn booking-btn" type="submit">send</button>
+            </form>
           </section>
 
           <!-- SECTION 8 Contacts -->

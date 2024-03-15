@@ -637,15 +637,79 @@ address {
 .booking {
   padding-top: 130px;
   padding-bottom: 174px;
+  padding-right: 26px;
 
   flex-basis: calc(50% + 15px);
 }
 
 .booking-title {
-  /* text-align: center; */
   color: var(--first-title-color);
+  margin-bottom: 44px;
 }
 
+.booking-form {
+}
+
+.booking-inp-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking-field {
+  margin-bottom: 44px;
+}
+
+.booking-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-text {
+  margin-bottom: 2px;
+
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+
+  transition: color 250ms var(--cubic);
+}
+
+.booking-label:focus-within .booking-text {
+  color: var(--interact-color);
+}
+
+.booking-inp {
+  width: 270px;
+  height: 24px;
+
+  color: var(--interact-color);
+  background-color: transparent;
+
+  border: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  outline: transparent;
+
+  transition: color 250ms var(--cubic), border-bottom-color 250ms var(--cubic);
+}
+
+.booking-inp:focus {
+  color: var(--interact-color);
+  border-bottom-color: var(--interact-color);
+}
+
+.booking-textarea {
+  resize: none;
+  width: 570px;
+  height: 76px;
+}
+
+.booking-btn {
+  text-align: center;
+}
 /* ----------------------------------------contacts */
 
 .contacts {
