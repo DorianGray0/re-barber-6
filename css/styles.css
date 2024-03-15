@@ -162,13 +162,16 @@ address {
 
 .navigation-link,
 .header-tel {
+  transform: scale(1);
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--interact-color);
 
-  transition: color 250ms var(--cubic);
+  transition: color 250ms var(--cubic), transform 250ms var(--cubic);
+  outline: transparent;
 }
 
 .navigation-link:hover,
@@ -176,6 +179,7 @@ address {
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
+  transform: scale(1.1);
 }
 
 .header-tel {
@@ -186,6 +190,7 @@ address {
 
 .header-button {
   color: var(--interact-color);
+  outline: transparent;
 }
 
 /* ----------------------------------hero */
@@ -232,6 +237,7 @@ address {
   letter-spacing: 0.2em;
   color: var(--second-title-color);
 
+  outline: transparent;
   transition: color 250ms var(--cubic);
 }
 
@@ -323,6 +329,7 @@ address {
 .about-button {
   color: var(--second-title-color);
 
+  outline: transparent;
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
@@ -415,6 +422,7 @@ address {
   margin: 0 auto;
 
   color: var(--interact-color);
+  outline: transparent;
 }
 
 /* ------------------------benefits */
@@ -581,6 +589,7 @@ address {
   justify-content: center;
   align-items: center;
 
+  outline: transparent;
   transition: fill 250ms var(--cubic), transform 250ms var(--cubic);
 }
 
@@ -1142,4 +1151,5 @@ address {
 .modal-form-btn {
   display: block;
   margin: 0 auto;
+  outline: transparent;
 }
