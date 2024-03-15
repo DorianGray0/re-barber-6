@@ -150,6 +150,16 @@ address {
 
 .header-logo {
   margin-right: 131px;
+
+  transform: scale(1);
+
+  outline: transparent;
+  transition: transform 250ms var(--cubic);
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  transform: scale(1.1);
 }
 
 .navigation-list {
