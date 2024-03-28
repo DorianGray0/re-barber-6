@@ -767,6 +767,12 @@ address {
 
 .address-link[href$='com'] {
   text-decoration: underline;
+  transition: text-decoration-color 250ms var(--cubic), transform 250ms var(--cubic);
+}
+
+.address-link[href$='com']:hover,
+.address-link[href$='com']:focus {
+  text-decoration-color: var(--accent-color);
 }
 
 .address-link,
@@ -788,7 +794,14 @@ address {
 }
 
 .address-icon {
-  fill: red;
+  stroke: #9da4bd;
+  fill: transparent;
+  transition: stroke 250ms var(--cubic);
+}
+
+.address-link:hover .address-icon,
+.address-link:focus .address-icon {
+  stroke: var(--accent-color);
 }
 
 /* .address-link:first-child {
